@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" rx="224" fill="#0A0A15"/>
+  <!-- Hello Again cat mark (traced from cat-app-icon-1024-opt1-jason-exact.png) -->
+  <path d="M 249.658 864.5 L 773.342 864.5 L 692.576 222.527 A 14.25 14.25 0 0 0 666.391 216.695 L 544.887 409 L 478.113 409 L 356.609 216.695 A 14.25 14.25 0 0 0 330.424 222.527 Z" fill="#FF3366"/><g stroke="#FF3366" stroke-width="29.6" stroke-linecap="round"><line x1="209.8" y1="602.8" x2="266.629" y2="622.265"/><line x1="202.1" y1="664.35" x2="260.543" y2="684.367"/><line x1="813.2" y1="602.8" x2="756.371" y2="622.265"/><line x1="820.9" y1="664.35" x2="762.457" y2="684.367"/></g>
+</svg>

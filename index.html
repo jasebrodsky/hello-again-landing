@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Hello Again — Turn what you're into into something to do</title>
+  <meta name="description" content="Hello Again turns what you love into irresistible plans for real days out. Live a day as Jerry Seinfeld, re-live the 90s NYC that made Biggie, chase Basquiat’s downtown. Coming soon. Get early access." />
+  <meta name="theme-color" content="#0A0A15" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph / social. TODO once the domain is live: add og:url and make og:image an absolute URL (see README). -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hello Again" />
+  <meta property="og:title" content="Hello Again — Your interests are going places." />
+  <meta property="og:description" content="Live a whole day as Jerry Seinfeld. Re-live the 90s NYC that made Biggie. Hello Again turns what you’re into into something to do. Coming soon." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Hello Again: Seinfeld becomes a plan to live a whole day as Jerry Seinfeld." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hello Again — Your interests are going places." />
+  <meta name="twitter:description" content="Live a whole day as Jerry Seinfeld. Re-live the 90s NYC that made Biggie. Coming soon." />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+    <div class="bg__grain"></div>
+  </div>
+
+  <header class="top">
+    <a class="brand" href="/" aria-label="Hello Again home">
+      <svg class="brand__loop brand__cat" viewBox="163 186 698 703" aria-hidden="true"><!-- Hello Again cat mark, from /workspace/cat-loader/cat-logo.svg --><path d="M 249.658 864.5 L 773.342 864.5 L 692.576 222.527 A 14.25 14.25 0 0 0 666.391 216.695 L 544.887 409 L 478.113 409 L 356.609 216.695 A 14.25 14.25 0 0 0 330.424 222.527 Z" fill="#FF3366"/><g stroke="#FF3366" stroke-width="29.6" stroke-linecap="round"><line x1="209.8" y1="602.8" x2="266.629" y2="622.265"/><line x1="202.1" y1="664.35" x2="260.543" y2="684.367"/><line x1="813.2" y1="602.8" x2="756.371" y2="622.265"/><line x1="820.9" y1="664.35" x2="762.457" y2="684.367"/></g></svg>
+      <span class="brand__word"><span class="brand__hello">hello</span> <span class="brand__again">again</span></span>
+    </a>
+    <span class="soon-pill"><span class="soon-pill__dot" aria-hidden="true"></span>Coming soon</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow reveal" style="--d:0">A new way to discover what's around you</p>
+        <h1 id="hero-title" class="hero__title reveal" style="--d:1">
+          Your interests are <em>going&nbsp;places.</em>
+        </h1>
+        <!-- Alternative headline from the brief: "Turn what you're into into something to do."
+             It's used as the caption of the discovery visual below; swap it in here if preferred. -->
+        <p class="hero__lede reveal" style="--d:2">
+          From the things you love to the places, experiences, and unexpected discoveries around you. Hello Again connects your interests with interesting things to do in the real world.
+        </p>
+
+        <form class="signup reveal" style="--d:3" data-signup data-source="hero" novalidate>
+          <div class="signup__row">
+            <label class="sr-only" for="email-hero">Email address</label>
+            <input class="signup__input" id="email-hero" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="status-hero" />
+            <!-- Honeypot: humans never see or fill this. -->
+            <input class="signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button class="btn" type="submit">
+              <span class="btn__label">Get early access</span>
+              <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="signup__status" id="status-hero" role="status" aria-live="polite"></p>
+        </form>
+        <p class="micro reveal" style="--d:4">Something interesting is around the corner.</p>
+      </div>
+
+      <figure class="map reveal" style="--d:2" aria-labelledby="map-caption">
+        <figcaption id="map-caption" class="map__caption">
+          Turn what you're into <span class="map__into">into something to do.</span>
+        </figcaption>
+
+        <div class="map__heads" aria-hidden="true">
+          <span>You're into</span>
+          <span>Your plan</span>
+        </div>
+
+        <div class="links-wrap">
+          <svg class="wires" aria-hidden="true" focusable="false"></svg>
+          <ol class="links">
+          <li class="link" style="--i:0">
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 3l4 4 4-4"/></svg>Seinfeld</span>
+            <span class="sr-only">becomes the plan:</span>
+            <span class="card">
+              <span class="card__kind">Plan · Day &amp; night</span>
+              <span class="card__title">Live a whole day as Jerry Seinfeld</span>
+              <span class="card__meta">UWS stroll, a diner booth, stand-up after dark</span>
+            </span>
+          </li>
+          <li class="link" style="--i:1">
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="12" rx="2"/><circle cx="8" cy="14" r="2.5"/><circle cx="16" cy="14" r="2.5"/><path d="M7 8V5h10v3"/></svg>90s hip-hop</span>
+            <span class="sr-only">becomes the plan:</span>
+            <span class="card">
+              <span class="card__kind">Plan · Full day</span>
+              <span class="card__title">Re-live the 90s NYC that made Biggie</span>
+              <span class="card__meta">Bed-Stuy blocks, a crate-dig, a midnight slice</span>
+            </span>
+          </li>
+          <li class="link" style="--i:2">
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6-8 8H6v-6z"/><path d="M11 7l6 6"/></svg>Basquiat</span>
+            <span class="sr-only">becomes the plan:</span>
+            <span class="card">
+              <span class="card__kind">Plan · Afternoon</span>
+              <span class="card__title">Chase the ghost of Basquiat’s downtown</span>
+              <span class="card__meta">Great Jones St, Bowery walls, a gallery crawl</span>
+            </span>
+          </li>
+          <li class="link" style="--i:3">
+            <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14l-7 8z"/><path d="M12 12v8M8 20h8"/></svg>Sex and the City</span>
+            <span class="sr-only">becomes the plan:</span>
+            <span class="card">
+              <span class="card__kind">Plan · Golden hour</span>
+              <span class="card__title">Be Carrie Bradshaw for a day</span>
+              <span class="card__meta">West Village stoops, a cupcake, a cosmo</span>
+            </span>
+          </li>
+          </ol>
+        </div>
+
+        <p class="map__more" aria-hidden="true">
+          <span>Taxi Driver’s 70s grit</span><span>Warhol’s Factory</span><span>Bowery punk, ’77</span><span>Ghostbusters</span><span class="map__more-end">…</span>
+        </p>
+      </figure>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <h2 id="closing-title" class="closing__title">There's more to discover <em>around&nbsp;you.</em></h2>
+      <p class="closing__sub">Hello Again is coming soon.</p>
+      <form class="signup signup--compact" data-signup data-source="closing" novalidate>
+        <div class="signup__row">
+          <label class="sr-only" for="email-closing">Email address</label>
+          <input class="signup__input" id="email-closing" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="status-closing" />
+          <input class="signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn" type="submit">
+            <span class="btn__label">Get early access</span>
+            <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <p class="signup__status" id="status-closing" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© Hello Again Labs LLC</span>
+  </footer>
+
+  <!-- signup.js is the ONLY file that knows about a backend. main.js just calls HelloAgainSignup.subscribe(). -->
+  <script src="signup.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
