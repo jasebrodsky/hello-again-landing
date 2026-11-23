@@ -52,7 +52,28 @@ The live site is served by GitHub Pages from this repo's `main` branch, root fol
 the files as-is. All asset paths are relative, so it works under the
 `/hello-again-landing/` project path.
 
-## The signup: how it behaves
+## Signup is currently OFF
+
+The early-access forms were removed from the live page because no backend is
+connected yet. Nothing on the page collects email. The pieces are kept, unreferenced:
+
+- `signup.js`: the backend adapter (see below)
+- `signup-ui/forms.html`: the hero and closing form markup
+- `signup-ui/form.css`: the form styles
+- `signup-ui/form.js`: the form behaviour (validation, honest states, success)
+
+### Re-enabling it
+
+1. Connect a backend in `signup.js` (Firebase or an endpoint, below) and test it.
+2. Paste the hero form from `signup-ui/forms.html` into `index.html` right after
+   `<p class="hero__lede">`, and the closing form after `<p class="closing__sub">`.
+3. Add `<link rel="stylesheet" href="signup-ui/form.css" />` after `styles.css`.
+4. Before `</body>`, add `<script src="signup.js"></script>` and
+   `<script src="signup-ui/form.js" defer></script>`.
+5. Optional: put "Get early access" back into the meta descriptions, and restore
+   the closing section's two-column layout (title left, form right).
+
+## How the signup behaves (once re-enabled)
 
 Out of the box `signup.js` has `PROVIDER: "none"`. In that state:
 

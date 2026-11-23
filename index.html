@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name='impact-site-verification' value='e02b3181-08c4-40ff-9b0a-375a8c10910f'>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Hello Again — Turn what you're into into something to do</title>
-  <meta name="description" content="Hello Again turns what you love into irresistible plans for real days out. Live a day as Jerry Seinfeld, re-live the 90s NYC that made Biggie, chase Basquiat’s downtown. Coming soon. Get early access." />
+  <meta name="description" content="Hello Again turns what you love into irresistible plans for real days out. Live a day as Jerry Seinfeld, re-live the 90s NYC that made Biggie, chase Basquiat’s downtown. Coming soon." />
   <meta name="theme-color" content="#0A0A15" />
   <meta name="color-scheme" content="dark" />
 
@@ -61,20 +62,7 @@
           From the things you love to the places, experiences, and unexpected discoveries around you. Hello Again connects your interests with interesting things to do in the real world.
         </p>
 
-        <form class="signup reveal" style="--d:3" data-signup data-source="hero" novalidate>
-          <div class="signup__row">
-            <label class="sr-only" for="email-hero">Email address</label>
-            <input class="signup__input" id="email-hero" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="status-hero" />
-            <!-- Honeypot: humans never see or fill this. -->
-            <input class="signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
-            <button class="btn" type="submit">
-              <span class="btn__label">Get early access</span>
-              <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-          <p class="signup__status" id="status-hero" role="status" aria-live="polite"></p>
-        </form>
-        <p class="micro reveal" style="--d:4">Something interesting is around the corner.</p>
+        <p class="micro reveal" style="--d:3">Something interesting is around the corner.</p>
       </div>
 
       <figure class="map reveal" style="--d:2" aria-labelledby="map-caption">
@@ -137,19 +125,7 @@
 
     <section class="closing" aria-labelledby="closing-title">
       <h2 id="closing-title" class="closing__title">There's more to discover <em>around&nbsp;you.</em></h2>
-      <p class="closing__sub">Hello Again is coming soon.</p>
-      <form class="signup signup--compact" data-signup data-source="closing" novalidate>
-        <div class="signup__row">
-          <label class="sr-only" for="email-closing">Email address</label>
-          <input class="signup__input" id="email-closing" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="status-closing" />
-          <input class="signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <button class="btn" type="submit">
-            <span class="btn__label">Get early access</span>
-            <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </div>
-        <p class="signup__status" id="status-closing" role="status" aria-live="polite"></p>
-      </form>
+      <p class="closing__sub"><span class="soon-pill__dot" aria-hidden="true"></span>Hello Again is coming soon.</p>
     </section>
   </main>
 
@@ -157,8 +133,6 @@
     <span>© Hello Again Labs LLC</span>
   </footer>
 
-  <!-- signup.js is the ONLY file that knows about a backend. main.js just calls HelloAgainSignup.subscribe(). -->
-  <script src="signup.js"></script>
   <script src="main.js" defer></script>
 </body>
 </html>

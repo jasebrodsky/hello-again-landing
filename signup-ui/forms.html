@@ -1,0 +1,33 @@
+<!-- Hero form: goes in .hero__copy right after .hero__lede -->
+        <form class="signup reveal" style="--d:3" data-signup data-source="hero" novalidate>
+          <div class="signup__row">
+            <label class="sr-only" for="email-hero">Email address</label>
+            <input class="signup__input" id="email-hero" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="status-hero" />
+            <!-- Honeypot: humans never see or fill this. -->
+            <input class="signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button class="btn" type="submit">
+              <span class="btn__label">Get early access</span>
+              <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+          <p class="signup__status" id="status-hero" role="status" aria-live="polite"></p>
+        </form>
+
+<!-- Closing form: goes in .closing after .closing__sub -->
+      <form class="signup signup--compact" data-signup data-source="closing" novalidate>
+        <div class="signup__row">
+          <label class="sr-only" for="email-closing">Email address</label>
+          <input class="signup__input" id="email-closing" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="status-closing" />
+          <input class="signup__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button class="btn" type="submit">
+            <span class="btn__label">Get early access</span>
+            <svg class="btn__arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <p class="signup__status" id="status-closing" role="status" aria-live="polite"></p>
+      </form>
+
+<!-- Scripts: before </body>
+<script src="signup.js"></script>
+<script src="signup-ui/form.js" defer></script>
+-->
